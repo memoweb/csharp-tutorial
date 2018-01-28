@@ -1,2 +1,8 @@
-messagebox.show ("deneme");
-label1.txt = "deneme";
+Webbrowser1.GoBack();
+Webbrowser1.GoForward();
+Webbrowser1.Refresh();
+Webbrowser1.Stop();
+
+
+Webbrowser1.Navigate(Textbox1.text);
+Webbrowser1.Navigate("http://www.google.com");
