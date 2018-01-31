@@ -1,11 +1,12 @@
 MailMessage mesaj = new MailMessage();
-mesaj.Subject =textbox. Text ;
-mesaj.From = new MailAdress("x@gmail.com");
-mesaj.To.Body textbox3.Text;
+            mesaj.Subject = textBox1.Text;
+            mesaj.From = new MailAddress("x@gmail.com");
+            mesaj.To.Add(textBox2.Text);
+            mesaj.Body = textBox3.Text;
 
-SmtpClient server = new SmtpClient("x@gmail.com");
-server.Credentials = new System.Net.NetworkCredential("x@gmail.com","password");
-server.Port = 587;
+            SmtpClient server = new SmtpClient("smtp.google.com");
+            server.Credentials = new System.Net.NetworkCredential("x@gmail.com", "password");
+            server.Port = 587;
 
-server.Send(mesaj);
-MessageBox.Show("Gönderildi");
+            server.Send(mesaj);
+            MessageBox.Show("GÃ¶nderildi");
