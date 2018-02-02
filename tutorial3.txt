@@ -1,0 +1,7 @@
+listBox1.Items.Add(textBox1.Text);
+
+ int sayi;
+            Random rd = new Random();
+            sayi = rd.Next(0, listBox1.Items.Count);
+            label1.Text = listBox1.Items[sayi].ToString();
+            listBox1.Items.Remove(label1.Text);
