@@ -1,12 +1,5 @@
-MailMessage mesaj = new MailMessage();
-            mesaj.Subject = textBox1.Text;
-            mesaj.From = new MailAddress("x@gmail.com");
-            mesaj.To.Add(textBox2.Text);
-            mesaj.Body = textBox3.Text;
-
-            SmtpClient server = new SmtpClient("smtp.google.com");
-            server.Credentials = new System.Net.NetworkCredential("x@gmail.com", "password");
-            server.Port = 587;
-
-            server.Send(mesaj);
-            MessageBox.Show("Gönderildi");
+double sayi1, sayi2, sonuc;
+            sayi1 = Convert.ToDouble(textBox1.Text);
+            sayi2 = Convert.ToDouble(textBox2.Text);
+            sonuc = sayi1 / sayi2;
+            label4.Text = sonuc.ToString();
